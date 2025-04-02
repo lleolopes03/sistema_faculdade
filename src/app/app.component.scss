@@ -1,0 +1,8 @@
+.titulo {
+  display: flex;
+  justify-content: center; // Centraliza horizontalmente o conteúdo
+  align-items: center;    // Centraliza verticalmente o conteúdo
+  height: 64px;           // Define a altura da barra (opcional)
+  background-color: #1976d2; // Cor de fundo (opcional)
+  color: white;              // Cor do texto (opcional)
+}
