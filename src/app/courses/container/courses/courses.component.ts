@@ -7,12 +7,19 @@ import { ErrorDialogComponent } from '../../../shared/components/error-dialog/er
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ConfirmationDialogComponent } from '../../components/confirmation-dialog/confirmation-dialog.component';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
+import { CoursesListComponent } from '../../components/courses-list/courses-list.component';
+import { AsyncPipe } from '@angular/common';
+import { MatToolbar } from '@angular/material/toolbar';
+import { MatCard, MatCardContent } from '@angular/material/card';
 
 
 @Component({
-  selector: 'app-courses',
-  templateUrl: './courses.component.html',
-  styleUrl: './courses.component.scss'
+    selector: 'app-courses',
+    templateUrl: './courses.component.html',
+    styleUrl: './courses.component.scss',
+    standalone: true,
+    imports: [MatCard, MatCardContent, MatToolbar, CoursesListComponent, MatProgressSpinner, AsyncPipe]
 })
 
 export class CoursesComponent implements OnInit {
